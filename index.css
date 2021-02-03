@@ -1,0 +1,119 @@
+.container {
+  width: 95vw;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #f1e1c9;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+article {
+  margin: 10px;
+  cursor: pointer;
+}
+article:hover {
+  transform: scale(1.08);
+  transition: 0.5s;
+}
+.btn {
+  background-color: #ea7d21;
+  padding: 0.5rem 0.6rem;
+  color: white;
+  font-weight: 540;
+  letter-spacing: 0.15rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 5px 5px 5px;
+}
+input {
+  font-weight: bold;
+  width: 400px;
+  line-height: 2rem;
+  border: 2px solid #f1e1c9;
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+  padding: 10px;
+}
+.buttons {
+  display: inline;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: -10px;
+}
+.btn:hover {
+  background-color: #ac5e1f;
+  transition: 0.6s ease-in-out;
+}
+img {
+  margin-top: 40px;
+  min-height: 200px;
+  height: 200px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0px 5px 5px#E58000;
+  -moz-box-shadow: 0 0px 5px 5px #e58000;
+  box-shadow: 5px 5px 5px 7px #e58000;
+  transition: all 1500ms ease-in-out;
+  animation-delay: 2s;
+}
+
+img.resize {
+  width: calc(100% / 4);
+}
+.forms {
+  text-align: center;
+  color: #2c3e50;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fcc067;
+  border: none;
+  border-radius: 20px;
+  width: 50vw;
+  padding: 2%;
+}
+.mainc {
+  position: absolute;
+  top: 10%;
+  width: 70%;
+  left: 13%;
+}
+.selectclass {
+  width: 300px;
+  padding: 5px;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+  border: 1px solid #f1e1c9;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 687x) {
+  img {
+    margin-top: 40px;
+    min-height: 200px;
+    min-width: 100px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: violet;
+  }
+
+  img.resize {
+    width: calc(100% / 5);
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 200;
+  }
+}
