@@ -25,7 +25,7 @@ function LoremIpsum() {
   var convalue="";
   for(var i=0;i<slidevalue;i++)
   {
-    convalue+=`${content[option]["value"]}`;
+    convalue=convalue+content[option]["value"] +"\n";
   }
 
   return (
@@ -53,7 +53,7 @@ function LoremIpsum() {
         <h4>No ofparagraphs: {slidevalue}</h4>
   <input type="range" min="1" max="8" value={slidevalue} onChange={handleChangeSlider} style={{width:'60%'}}/>
 </div>
-        <p style={{ marginBottom: "40px", fontSize: "20px" }}>
+        <p style={{ marginBottom: "40px", fontSize: "20px",whiteSpace:'pre-wrap' }}>
           {convalue}{""}
         </p>
        
